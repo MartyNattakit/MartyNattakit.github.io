@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Marty Nattakit</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skill">Skills</a>
+        <a href="#contact">Contact</a>
+    </div>
+  </header>
+  
+  <!-- Intro Section -->
+  <section id="home" class="intro">
+    <h1>Welcome to My Portfolio</h1>
+    <img class="circle" src="martyreal.png" alt="Marty">
+    <h1>Nattakit Chantara-aree (Marty)</h1>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <h1>About Me</h1>
+
+    <section id="new-section" class="content-section">
+      <div class="project">
+        <h2 id="intro-text">Introduction</h2>
+        <h2 id="school-text">School: Suankularbwittayalai Rangsit</h2>
+        <h2 id="program-text">Program: Science and Mathematics</h2>
+        <h2 id="hobby-text">Hobby: Programming, board games and reading</h2>
+        <h2 id="new-paragraph" style="display: none;">Introduction(More) <br><br> Club: SKR Cyber Club <br> GPA: 3.75</h2>
+      </div>
+      <div class="image">
+        <img src="skr.png" id="toggle-image" alt="Click to toggle content">
+      </div>
+    </section>
+  </section>
+
+  <!-- skill Section -->
+  <section id="skill" class="skills">
+    <h2>My Programming Skills</h2>
+    <div class="project-card-container">
+      <!-- First row -->
+      <div class="project-card">
+        <img src="python.png" alt="Python">
+        <h3>Python</h3>
+      </div>
+      <div class="project-card">
+        <img src="frontend.png" alt="frontend">
+        <h3>HTML, CSS, Javascript</h3>
+      </div>
+      <div class="project-card">
+        <img src="php.png" alt="PHP">
+        <h3>PHP</h3>
+      </div>
+      <!-- Second row -->
+      <div class="project-card">
+        <img src="mysql.png" alt="Mysql">
+        <h3>MySql</h3>
+      </div>
+      <div class="project-card">
+        <img src="arduino.jpg" alt="Arduino">
+        <h3>Arduino</h3>
+      </div>
+      <div class="project-card">
+        <img src="rbstudio.png" alt="Roblox Studio">
+        <h3>Roblox Studio</h3>
+      </div>
+      <!-- Third row -->
+      <div class="project-card">
+        <img src="C.png" alt="C">
+        <h3>C</h3>
+      </div>
+      <div class="project-card">
+        <img src="cpp.png" alt="C++">
+        <h3>C++</h3>
+      </div>
+      <div class="project-card">
+        <img src="soon.png" alt="more">
+        <h3>More Soon...</h3>
+      </div>
+    </div>
+</section>
+
+  
+
+  <!-- script (only for about) -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const image = document.getElementById("toggle-image");
+      const introText = document.getElementById("intro-text");
+      const schoolText = document.getElementById("school-text");
+      const programText = document.getElementById("program-text");
+      const hobbyText = document.getElementById("hobby-text");
+      const newParagraph = document.getElementById("new-paragraph");
+
+      const originalImage = "skr.png";  // Original image
+      const newImage = "skr_cyber.png"; // Image to show when clicked
+
+      // Initialize content visibility correctly
+      introText.style.display = "block";
+      schoolText.style.display = "block";
+      programText.style.display = "block";
+      hobbyText.style.display = "block";
+      newParagraph.style.display = "none";
+
+      image.addEventListener("click", function () {
+        if (newParagraph.style.display === "none" || newParagraph.style.display === "") {
+          // Hide original text and show the new paragraph
+          introText.style.display = "none";
+          schoolText.style.display = "none";
+          programText.style.display = "none";
+          hobbyText.style.display = "none";
+          newParagraph.style.display = "block";
+
+          // Change the image to new image
+          image.src = newImage;
+        } else {
+          // Show original text and hide the new paragraph
+          introText.style.display = "block";
+          schoolText.style.display = "block";
+          programText.style.display = "block";
+          hobbyText.style.display = "block";
+          newParagraph.style.display = "none";
+
+          // Change the image back to original
+          image.src = originalImage;
+        }
+      });
+    });
+  </script>
+
+  <!-- Contact Section -->
+  
+  <section id="contact">
+    <footer>
+      <h2>Contact Me</h2>
+      <div class="contact-icons">
+        <a href="mailto:martyxc2018@gmail.com" target="_blank">
+          <img src="gmail.png" alt="Gmail" class="contact-icon">
+        </a>
+        <a href="https://github.com/martynattakit" target="_blank">
+          <img src="github.png" alt="GitHub" class="contact-icon">
+        </a>
+        <a href="https://www.instagram.com/marty_nattakit" target="_blank">
+          <img src="instagram.png" alt="Instagram" class="contact-icon">
+        </a>
+      </div>
+    </footer>
+  </section>
+  
+  
+
+</body>
+</html>

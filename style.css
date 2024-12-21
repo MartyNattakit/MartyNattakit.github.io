@@ -1,0 +1,309 @@
+body {
+    font-family: "Pixelify Sans", serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+header {
+    background: linear-gradient(to right, #f7b6ee, #8fd2ff);
+    color: white;
+    padding: 40px;
+    text-align: center;
+  }
+  
+  header div {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  header a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+  }
+  
+.intro {
+    text-align: center;
+    padding: 50px;
+    background-color: #fff;
+}
+.intro h1 {
+    font-size: 36px;
+}
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 50px;
+    background-color: #fff;
+}
+.about .project {
+    width: 70%;
+    background-color: #eee;
+    padding: 20px;
+    margin-right: auto;
+    text-align: center;
+}
+.about .project img {
+    max-width: 100%;
+    height: auto;
+}
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+.circle { 
+    border-radius: 50%;
+    width: 400px;
+    height: 400px;
+}
+.content-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    background-color: #fff;
+}
+.content-section .text {
+    width: 50%;
+    padding-right: 20px;
+}
+.content-section .text h2 {
+    font-size: 28px; /* Adjust size as needed */
+    margin-bottom: 20px;
+    white-space: nowrap; /* Prevent line breaks */
+    overflow: hidden; /* Ensure no overflow */
+    text-overflow: ellipsis; /* Add ellipsis if text overflows */
+}
+.content-section .text p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+.content-section .image {
+    width: 50%;
+    text-align: center;
+}
+.content-section .image img {
+    max-width: 50%; /* Adjust for smaller image */
+    height: auto;
+}
+#new-section h2 {
+    font-size: 28px; /* Adjusted size */
+    line-height: 1.4; /* Better spacing for multi-line titles */
+    word-wrap: break-word; /* Ensures words wrap to the next line */
+}
+.projects {
+    padding: 3rem 2rem;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+.projects h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #333;
+}
+
+.project-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    width: 250px;
+    margin: 15px;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.project-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.project-card h3 {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    color: #333;
+}
+
+.project-card p {
+    font-size: 1rem;
+    color: #666;
+    margin-top: 0.5rem;
+}
+
+.project-card a {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.project-card a:hover {
+    background-color: #0056b3;
+}
+
+.projects .project-card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.projects .project-card-container .project-card {
+    margin: 10px;
+}
+#toggle-image {
+    cursor: pointer;
+    width: 100%; /* Adjust the width if needed */
+    max-width: 500px; /* Maximum width of the image */
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  #toggle-image:hover {
+    opacity: 0.7; /* Add a slight opacity effect on hover */
+  }
+  .skills {
+    padding: 3rem 2rem;
+    text-align: center;
+    background-color: #f9f9f9;
+  }
+  
+  .skills h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #333;
+  }
+  
+  .project-card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 equal-width columns */
+    gap: 20px; /* Space between columns and rows */
+    justify-items: center; /* Center content horizontally */
+  }
+  
+  .project-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    width: 250px; /* Adjust width to fit your layout */
+    margin: 15px;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .project-card img {
+    width: 80%; /* Makes the image a bit smaller to leave space */
+    height: auto;
+    margin-bottom: 10px; /* Adds spacing between image and text */
+  }
+  
+  .project-card h3 {
+    font-size: 1.4rem; /* Adjust font size for the language name */
+    margin-top: 10px; /* Adds spacing between the image and the name */
+    color: #333;
+  }
+  
+  .project-card p {
+    font-size: 1rem;
+    color: #666;
+    margin-top: 0.5rem;
+  }
+  
+  /* For the container of the project cards to have a 3-column layout */
+  .projects .project-card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .projects .project-card-container .project-card {
+    margin: 10px;
+  }
+  
+  
+  
+  .project-card a {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .project-card a:hover {
+    background-color: #0056b3;
+  }
+  
+  @media (max-width: 768px) {
+    .project-card-container {
+      grid-template-columns: repeat(2, 1fr); /* 2 columns on smaller screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .project-card-container {
+      grid-template-columns: 1fr; /* 1 column on mobile devices */
+    }
+  }
+  
+  
+  #contact h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+  }
+  
+  .contact-icons {
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* Space between icons */
+  }
+  
+  .contact-icon {
+    width: 40px; /* Size of the icons */
+    height: 40px;
+    transition: transform 0.3s ease;
+  }
+  
+  .contact-icon:hover {
+    transform: scale(1.2);
+  }
+  footer {
+    background: linear-gradient(to right, #f7b6ee, #8fd2ff);
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  footer p {
+    font-size: 0.9rem;
+    margin-top: 10px;
+  }
+  
+  
